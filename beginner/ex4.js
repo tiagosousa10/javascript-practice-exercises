@@ -10,3 +10,11 @@ const formatDate = (date = new Date()) => {
 }
 
 console.log(formatDate())
+
+const obterData = (data = new Date()) => {
+  const dia = data.getDate();
+  const mes = data.getMonth()+ 1;
+  const ano = data.getFullYear()
+
+  return `${dia}-${mes}-${ano}`
+}

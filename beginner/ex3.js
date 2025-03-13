@@ -11,3 +11,13 @@ const moveCharsForward = (string) =>
 
 
 console.log(moveCharsForward('abcd'))
+
+
+const moverParaFrente = (frase) => {
+  frase = frase
+    .split("")
+    .map(caracter => String.fromCharCode(caracter.charCodeAt(0) + 1))
+    .join("")
+
+  return frase;
+}
