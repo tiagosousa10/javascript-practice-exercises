@@ -8,3 +8,14 @@ console.log(makeNewString('abcdef'))
 console.log(makeNewString('abc321kdwadaww'))
 
 
+const novaString = (string) => {
+  return string.length < 3 ? string : string.slice(0,3) + '--' + string.slice(-3)
+}
+
+console.log(novaString('abcdefg'))
+
+const newString = (str) => {
+  return str.length < 2 ? str : str.slice(0,2) + '*-*' + str.slice(-2)
+}
+
+console.log(newString('helllooooooooooo'))
