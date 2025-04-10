@@ -10,3 +10,21 @@ const getRandomHexColor = () => '#' + Array.from({length: 6}).map(getRandomHexNu
 console.log("🚀 ~ getRandomHexColor:", getRandomHexColor())
 console.log("🚀 ~ getRandomHexColor:", getRandomHexColor())
 console.log("🚀 ~ getRandomHexColor:", getRandomHexColor())
+
+//---------------------------------------------------------
+const gerarRandom = () => {
+  return Math.floor(Math.random() * 16).toString(16)
+}
+console.log("🚀 ~ gerarRandom ~ gerarRandom:", gerarRandom())
+
+const gerarHexa= () => '#' + Array.from({length:6}).map(gerarRandom).join('')
+
+
+console.log("🚀 ~ gerarHexa ~ gerarHexa:", gerarHexa())
+//---------------------------------------------------------
+
+
+const gRandom = () => Math.floor(Math.random() * 2).toString(16)
+const gHexa = () => '$' + Array.from({length: 6}).map(gRandom).join('')
+
+console.log("🚀 ~ gHexa:", gHexa())

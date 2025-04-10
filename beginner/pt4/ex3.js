@@ -13,5 +13,28 @@ const string = `abc,def,ghi,
 jkl,mno,pqr,
 stu,vwx,yz`;
 
-
 console.log(parseCSV(string));
+
+//---------------------------------------------------------
+
+const convertString = (string) => {
+  return string.split('\n').map(elementRow => elementRow.split(','))
+}
+
+const str = `abc,def,ghi,
+jkl,mno,pqr,
+stu,vwx,yz`;
+
+console.log(convertString(str))
+
+//---------------------------------------------------------
+
+const convertString2 = (string) => {
+  return string.split('\n').map(row=> row.split(','))
+}
+
+const str2 = `dwadw,dwadw,dwadw,
+dwadw,dwadw,dwadw,
+dwadw,dwadw,dwadw`;
+
+console.log(convertString2(str2))
