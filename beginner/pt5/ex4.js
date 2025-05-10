@@ -11,5 +11,6 @@ const getUniqueChars = (string) => {
 const getUniqueChars2 = (str) =>
   [...new Set(str.split(''))]; // set is a collection of unique values
 
+
 console.log(getUniqueChars('tiiaggooo'))
 console.log(getUniqueChars2('wadaaaaddddvccc'))
